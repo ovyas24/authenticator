@@ -1,0 +1,37 @@
+{
+  "name": "auth-it-up",
+  "version": "0.0.1",
+  "description": "A jwt based authenticator for quick auth setup in your projects",
+  "main": "index.js",
+  "scripts": {
+    "test": "node ./node_modules/mocha/bin/mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ovyas24/authenticator.git"
+  },
+  "keywords": [
+    "auth",
+    "jwt",
+    "bcrypt",
+    "password",
+    "encryption",
+    "jsonwebtoken"
+  ],
+  "engines": {
+    "node": ">= 10.0.0"
+  },
+  "author": "ovyas24",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ovyas24/authenticator/issues"
+  },
+  "homepage": "https://github.com/ovyas24/authenticator#readme",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "jsonwebtoken": "^8.5.1"
+  },
+  "devDependencies": {
+    "mocha": "^9.1.3"
+  }
+}
