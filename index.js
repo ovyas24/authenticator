@@ -2,7 +2,6 @@ const jwt = require("jsonwebtoken");
 const bcrypt = require("bcrypt");
 
 const signin = async ( user, password, expiresIn ) => {
-
     try {
         if(!user) return new Error("User not found");
         const isMatch = await bcrypt.compare(password, user.password);

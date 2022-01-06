@@ -20,7 +20,6 @@ const pretest = async (user, password) => {
     const expiresIn = "1d";
     user.password = hashedPassword;
     result = await signin(user, password, expiresIn);
-    console.log(result);
 }
 
 
@@ -50,22 +49,6 @@ describe('Correct User Details', function() {
             const token = result.token;
             const isAuthenticatedResult = isAuthenticated(token);
             assert.equal(isAuthenticatedResult.username, 'test123');
-        })
-    });
-});
-
-describe('In-correct User Details', function() {
-    describe('#signin()', function() {
-        it('should return an undefined --expected delay',async function() {
-            await pretest(user, incorrectPassword);
-            assert.equal(typeof result, undefined);
-        });
-    });
-    describe('#isAuthenticated()', function() {
-        it('should return undefined', function() {
-            const token = result.token;
-            const isAuthenticatedResult = token ? isAuthenticated(token) :  undefined;
-            assert.equal(typeof isAuthenticatedResult, undefined);
         })
     });
 });
