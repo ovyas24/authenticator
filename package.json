@@ -1,5 +1,5 @@
 {
-  "name": "auth-it-up",
+  "name": "@ovyas24/auth-it-up",
   "version": "0.0.1",
   "description": "A jwt based authenticator for quick auth setup in your projects",
   "main": "index.js",
@@ -33,5 +33,8 @@
   },
   "devDependencies": {
     "mocha": "^9.1.3"
+  },
+  "directories": {
+    "test": "test"
   }
 }
